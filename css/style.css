@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Lobster&display=swap');
+
+/*selector universal, solo esas  propiedades se puede colocar y es para dar formato a la pagina completa*/
+
+
+*{
+     margin: 0%;
+     padding: 0%;
+}
+
+/*--------------------------------------li del nav--------------------------*/
+li{
+    list-style: none;
+}
+
+/*------------------------colores especificos de botones, fondos y letras--------------*/
+.colorverde{
+    color:#bdd76a ;
+    
+}
+.bg-verde{
+    background-color:#bdd76a;
+    border-color: #bdd76a
+    
+}
+
+.btn-verde {
+    color: #fff;
+    background-color:#bdd76a;
+    border-color: #bdd76a;
+    border-radius: 0%;
+
+}
+.bg-negro{
+    background-color: black;
+}
+
+hr{
+    color:#bdd76a;
+    border-color: #bdd76a ;
+    height: 1.5rem;
+    margin: 0.2rem;
+    
+}
+.pie{
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+}
+.letraencabezado{
+    font-family:'Alegreya', serif;
+    font-size: 1.5rem;
+}
+
+/*------------------------------------config de carusel------------------------------------*/
+.carousel-control-next{
+    opacity: 1.0;
+    justify-content: flex-end;
+}
+.carousel-control-prev{
+    opacity: 1.0;
+    justify-content: flex-start;
+} 
+
+.carousel-caption {
+    padding-top: 7rem;
+    padding-bottom: 12rem; 
+    font-size: 2rem;
+}
+.welocome{
+    font-size: 9rem;
+    font-weight: bolder;
+    margin-bottom: 0rem;
+}
+
+
+/*--------------------------------------texto de SALE Y NOW---------------------------------*/
+.text{
+    position:absolute;
+    right: 0.0rem;
+    padding: 0.5rem;
+
+}
+/*----------------------------------------pagina de contacto--------------------------------*/
+
+.informacioncontacto{
+    background-image: url("https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=655&q=80"); 
+    padding: 1rem;
+   background-position: center;
+   background-size: cover;
+  
+    
+}
+
+
+/*-----------------------------------------pagina de producto-------------------------------*/
+.fresas-img{
+    background-image: url("https://images.unsplash.com/photo-1553549216-903af0603b16?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+    opacity: 0.9;
+
+
+}
+
+
+
+
+
+
+/*------------medidas queries para movil--------------------*/ 
+
+@media (max-width:768px){
+   
+
+    .carousel-caption {
+        padding: 0rem;
+        padding-bottom: 0rem; 
+        font-size: 0.85rem;
+        
+    }
+    .welocome{
+        font-size: 2rem;
+        font-weight: bolder;
+        margin-bottom: 0rem;
+    }
+   
+    
+}
+
+/*------------medidas queries para tabletas--------------------*/ 
+
+
+@media (min-width:768px) and (max-width:992px){
+    .carousel-caption {
+        padding-top: 0rem;
+        padding-bottom: 0rem; 
+        font-size: 2rem;
+    }
+    .welocome{
+        font-size: 3rem;
+        font-weight: bolder;
+        margin-bottom: 0.5rem;
+    }
+   
+}
+
